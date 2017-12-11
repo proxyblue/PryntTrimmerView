@@ -121,7 +121,6 @@ public protocol TrimmerViewDelegate: class {
 
     private func setupHandleView() {
         roundedRectangleImageView.translatesAutoresizingMaskIntoConstraints = false
-        roundedRectangleImageView.isUserInteractionEnabled = true
         roundedRectangleImageView.contentMode = .scaleToFill
         addSubview(roundedRectangleImageView)
 
