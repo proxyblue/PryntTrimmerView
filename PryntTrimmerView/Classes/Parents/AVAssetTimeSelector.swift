@@ -11,7 +11,7 @@ import AVFoundation
 
 /// A generic class to display an asset into a scroll view with thumbnail images, and make the equivalence between a time in
 // the asset and a position in the scroll view
-open public class AVAssetTimeSelector: UIView, UIScrollViewDelegate {
+open class AVAssetTimeSelector: UIView, UIScrollViewDelegate {
 
     let assetPreview = AssetVideoScrollView()
 

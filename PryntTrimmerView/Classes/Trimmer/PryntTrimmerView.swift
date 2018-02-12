@@ -19,7 +19,7 @@ public protocol TrimmerViewDelegate: class {
 /// video preview, typically with an `AVPlayer`.
 /// Load the video by setting the `asset` property. Access the `startTime` and `endTime` of the view to get the selected time
 // range
- @IBDesignable open public class TrimmerView: AVAssetTimeSelector {
+ @IBDesignable open class TrimmerView: AVAssetTimeSelector {
 
     // MARK: - Properties
 
