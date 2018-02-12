@@ -24,7 +24,7 @@ open class VideoScrollView: UIView {
         setupSubviews()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupSubviews()
     }
@@ -92,11 +92,11 @@ open class VideoScrollView: UIView {
 
 extension VideoScrollView: UIScrollViewDelegate {
 
-    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+    public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return contentView
     }
 
-    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
+    public func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
         let scaledAssetSize = CGSize(width: assetSize.width * scale, height: assetSize.height * scale)
         scrollView.contentSize = scaledAssetSize
     }

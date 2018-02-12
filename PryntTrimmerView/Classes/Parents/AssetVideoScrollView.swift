@@ -22,7 +22,7 @@ open class AssetVideoScrollView: UIScrollView {
         setupSubviews()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupSubviews()
     }
@@ -46,7 +46,7 @@ open class AssetVideoScrollView: UIScrollView {
         widthConstraint?.isActive = true
     }
 
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         contentSize = contentView.bounds.size
     }

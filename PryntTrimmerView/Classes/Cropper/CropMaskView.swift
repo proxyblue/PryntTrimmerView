@@ -23,7 +23,7 @@ open class CropMaskView: UIView {
         setupSubviews()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupSubviews()
     }
@@ -51,7 +51,7 @@ open class CropMaskView: UIView {
         cropBoxView.topAnchor.constraint(equalTo: topAnchor).isActive = true
     }
 
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
 
         let path = UIBezierPath(rect: bounds)
