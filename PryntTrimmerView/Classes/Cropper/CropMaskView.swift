@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CropMaskView: UIView {
+open class CropMaskView: UIView {
 
     let cropBoxView = UIView()
     let frameView = UIView()

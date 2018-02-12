@@ -9,7 +9,7 @@
 import AVFoundation
 import UIKit
 
-class AssetVideoScrollView: UIScrollView {
+open class AssetVideoScrollView: UIScrollView {
 
     private var widthConstraint: NSLayoutConstraint?
 

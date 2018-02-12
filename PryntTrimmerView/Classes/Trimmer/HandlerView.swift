@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class HandlerView: UIView {
+open class HandlerView: UIView {
 
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         let hitFrame = bounds.insetBy(dx: -20, dy: -20)

@@ -18,7 +18,7 @@ public protocol ThumbSelectorViewDelegate: class {
 /// A view to select a specific time of an `AVAsset`. It is composed of an asset preview within a scroll view, and a thumb view
 /// to select a precise time of the video. Set the `asset` property to load the video, and use the `selectedTime` property to
 // retrieve the exact frame of the asset that was selected.
-public class ThumbSelectorView: AVAssetTimeSelector {
+open public class ThumbSelectorView: AVAssetTimeSelector {
 
     public var thumbBorderColor: UIColor = .white {
         didSet {

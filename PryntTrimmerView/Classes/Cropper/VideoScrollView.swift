@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class VideoScrollView: UIView {
+open class VideoScrollView: UIView {
 
     let scrollView = UIScrollView()
     var contentView = UIView()
